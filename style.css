@@ -1,0 +1,140 @@
+.typing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: #4fc3f7;
+  animation: cursorBlink 0.8s steps(3) infinite;
+}
+
+.typing {
+  position: relative;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+}
+
+.typing h2 {
+  position: relative;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 4rem;
+  overflow: hidden;
+  margin-bottom: 0;
+  animation: type 5s steps(11) infinite;
+}
+
+@keyframes type {
+  0%,
+  100% {
+    width: 0px;
+  }
+
+  30%,
+  60% {
+    width: 394.09px;
+  }
+}
+
+@media (max-width: 330px) {
+  .typing h2 {
+    font-size: 3rem;
+    animation: type 5s steps(10) infinite;
+  }
+
+  @keyframes type {
+    0%,
+    100% {
+      width: 0px;
+    }
+
+    30%,
+    60% {
+      width: 305px;
+    }
+  }
+}
+
+.hiThereSide {
+  padding: 100px;
+}
+
+.subheading {
+  font-weight: 700;
+  color: #0779e4;
+  font-size: 13px;
+  /* display: inline-block; */
+  letter-spacing: 1px;
+  /* margin-bottom: 5px; */
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  background: #fff;
+  border-radius: 4px;
+  padding: 4px 9px;
+}
+
+/* tabs items */
+h2 {
+  color: #000;
+  text-align: center;
+  font-size: 2em;
+}
+.warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0px 2px;
+  background: ghostwhite;
+  display: inline-block;
+  color: #777777;
+  border-radius: 3px 3px 0px 0px;
+  border-radius: 5px;
+}
+.panels {
+  background: #fffffff6;
+  min-height: 200px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 20px;
+}
+.panel {
+  display: none;
+  animation: fadein 0.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.radio {
+  display: none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel {
+  display: block;
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab {
+  background: #0779e4;
+  color: white;
+  border-top: 3px solid white;
+}
+.wordpress {
+  margin-left: 100px;
+}
