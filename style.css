@@ -138,3 +138,40 @@ h2 {
 .wordpress {
   margin-left: 100px;
 }
+
+.navbar {
+  margin-left: 200px;
+}
+
+.navbar li {
+  margin-left: 25px;
+}
+
+.headingline {
+  margin-left: -740px;
+}
+
+.Ford {
+  margin-left: -110px;
+}
+
+/* -------------- */
+
+.typewrite {
+  color: #fff;
+  padding-top: 10em;
+  text-decoration: none;
+}
+
+.markup {
+  background-color: white;
+  padding: 4px 9px;
+  color: blueviolet;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-left: -310px;
+}
+
+.keannu {
+  margin-left: -140px;
+}
