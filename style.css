@@ -175,3 +175,7 @@ h2 {
 .keannu {
   margin-left: -140px;
 }
+.card-margin {
+  margin-left: 230px;
+  gap: 30px;
+}
